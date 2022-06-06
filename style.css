@@ -12,7 +12,7 @@ body{
     'section-1' auto
     'featured-games' auto
     'live-channels' auto
-    'footer' auto ;
+    'footer' 1fr ;
 }
 header{
     grid-area: header;
@@ -43,9 +43,9 @@ header ul li{
 .header-search-bar{
     display: grid;
     grid-auto-flow: column;
+    grid-template-columns: 40px auto;
 }
 .header-search-bar button{
-    transform: translateX(1px);
     background-color: white;
     border-right: none;
     border-top-left-radius: 20px;
@@ -73,4 +73,24 @@ header ul li{
     background: -webkit-linear-gradient(left, rgb(3, 104, 129), red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
+}
+
+/* Section-1 */
+
+.section-1{
+    grid-area: section-1;
+
+}
+.section-1-headers{
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+    padding-top: 30px;
+}
+.section-1-headers h1{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.section-1-headers h3{
+    font-size: 20px;
 }
