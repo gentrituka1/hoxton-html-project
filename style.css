@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     height: 100vh;
     display: grid;
@@ -15,6 +16,7 @@ body{
 }
 header{
     grid-area: header;
+    width: 100%;
     background-color: #171717;
 }
 header h1{
@@ -29,7 +31,6 @@ header ul{
     display: grid;
     grid-auto-flow: column;
     padding: 10px 30px;
-    gap: 50px;
 }
 header ul li{
     display: grid;
@@ -40,8 +41,36 @@ header ul li{
     font-size: 1.3rem;
 }
 .header-search-bar{
-    
+    display: grid;
+    grid-auto-flow: column;
 }
-.search-button{
-    color: white;
+.header-search-bar button{
+    transform: translateX(1px);
+    background-color: white;
+    border-right: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.header-search-bar input{
+    padding: 10px;
+    width: 100%;
+    border-left: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-color: black;
+}
+.header-login-button{
+    text-align: end;
+}
+.header-login-button button{
+    width: 150px;
+    height: 100%;
+    border-radius: 30px;
+    font-size: 17px;
+    font-family: Verdana;
+}
+.header-login-button button:hover{
+    background: -webkit-linear-gradient(left, rgb(3, 104, 129), red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
 }
