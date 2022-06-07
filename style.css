@@ -137,6 +137,49 @@ header ul li{
 }
 
 
+/* Section-2 section */
+
+.featured-games{
+    grid-area: featured-games;
+}
+.featured-games-main{
+    display: grid;
+    padding: 30px;
+    gap: 20px;
+}
+.featured-games-main-top{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 12% 1fr;
+    align-items: center;
+}
+.main-top-first-span{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-style: italic;
+}
+.main-top-second-span{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.featured-games-main-bottom a{
+    text-decoration: none;
+    color: black;
+}
+.featured-games-main-bottom h6{
+    font-size: 18px;
+}
+.featured-games-main-bottom ul{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 30px;
+}
+.featured-games-main-bottom li{
+    list-style: none;
+    display: grid;
+    gap: 5px;
+}
+
 /* Footer section */
 
 footer{
