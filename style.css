@@ -201,6 +201,7 @@ header ul li {
 
 .featured-games-main-bottom h6 {
   font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .featured-games-main-bottom ul {
   display: grid;
@@ -213,6 +214,11 @@ header ul li {
   gap: 5px;
   place-items: center;
   transition: all 0.5s ease-in-out;
+}
+.featured-games-main-bottom li p{
+  color: royalblue;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
 }
 .featured-games-main-bottom li:hover {
   background-color: #e6e4e4;
