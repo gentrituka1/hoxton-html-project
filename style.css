@@ -14,7 +14,7 @@ body {
     "live-channels" auto
     "footer" auto /
     1fr;
-    position: relative;
+  position: relative;
 }
 header {
   grid-area: header;
@@ -30,35 +30,35 @@ header h1 {
   -webkit-text-fill-color: transparent;
   font-size: 2.5rem;
 }
-.h1-list{
+.h1-list {
   text-decoration: none;
   transition: all 0.1s ease-in;
 }
-.h1-list:hover{
+.h1-list:hover {
   transform: scale(0.9);
 }
-.header-lists{
-    text-decoration: none;
-    display: grid;
-    align-items: center;
+.header-lists {
+  text-decoration: none;
+  display: grid;
+  align-items: center;
 }
-.header-lists:hover{
+.header-lists:hover {
   animation: flip 1s linear;
 }
 @keyframes flip {
-  0%  {
+  0% {
     transform: scale(5);
   }
-  25%{
+  25% {
     transform: scale(0.2);
   }
-  50%{
+  50% {
     transform: scale(2);
   }
-  75%{
+  75% {
     transform: scale(0.6);
   }
-  100%{
+  100% {
     transform: scale(1);
   }
 }
@@ -96,7 +96,6 @@ header ul li {
 }
 .header-login-button {
   text-align: end;
-  
 }
 .header-login-button button {
   width: 150px;
@@ -105,7 +104,6 @@ header ul li {
   font-size: 17px;
   font-family: Verdana;
   transition: all 0.5s ease-in-out;
-
 }
 .header-login-button button:hover {
   background: -webkit-linear-gradient(left, rgb(3, 104, 129), red);
