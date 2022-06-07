@@ -13,7 +13,7 @@ body{
     'featured-games' auto
     'live-channels' auto
     'footer' auto /
-    1fr ;
+    auto ;
 }
 header{
     grid-area: header;
@@ -140,7 +140,7 @@ header ul li{
 /* Section-2 section */
 
 .featured-games{
-    grid-area: featured-games;
+    grid-area: featured-games;  
 }
 .featured-games-main{
     display: grid;
@@ -172,12 +172,14 @@ header ul li{
 .featured-games-main-bottom ul{
     display: grid;
     grid-auto-flow: column;
-    gap: 30px;
+    grid-gap: 20px;
+    grid-template: repeat(autofill, 300px);
 }
 .featured-games-main-bottom li{
     list-style: none;
     display: grid;
     gap: 5px;
+    place-items: center;
 }
 
 /* Footer section */
@@ -195,7 +197,6 @@ footer{
 
 .all-columns h5{
     font-size: 22px;
-
 }
 .center-columns{
     display: grid;
