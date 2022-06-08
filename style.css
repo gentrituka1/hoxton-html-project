@@ -170,7 +170,7 @@ header ul li {
   font-weight: 700;
 }
 
-/* Section-2 section */
+/* featured-games section */
 
 .featured-games {
   grid-area: featured-games;
@@ -231,6 +231,41 @@ header ul li {
 .live-channels {
   grid-area: live-channels;
 }
+
+/* live-channels section */
+
+.live-channels{
+  grid-area: live-channels;
+  padding: 30px;
+  display: grid;
+  gap: 20px;
+  width: 100%;
+}
+
+.live-channels li{
+  list-style: none;
+  display: grid;
+  gap: 20px;
+  place-items: center;
+  transition: all 0.5s ease-in-out;
+}
+.live-channels li:hover{
+  transform: scale(1.1);
+  box-shadow: 5px 5px 20px yellow;
+}
+.live-channels ul img{
+  width: 100%;
+}
+.center-videos{
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fill, 420px);
+}
+.live-channels a {
+  text-decoration: none;
+  color: black;
+}
+
 
 /* Footer section */
 
