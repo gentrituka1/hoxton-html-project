@@ -124,6 +124,7 @@ header ul li {
   justify-items: center;
   gap: 10px;
   padding-top: 30px;
+  
 }
 .section-1-headers b {
   background: -webkit-linear-gradient(left, rgb(3, 104, 129), red);
@@ -301,4 +302,9 @@ footer {
 .fourth-column {
   display: grid;
   transform: translateY(50px);
+}
+@media (max-width: 800px){
+  .header-lists{
+    display: none;
+  }
 }
