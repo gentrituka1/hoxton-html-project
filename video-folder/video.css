@@ -146,6 +146,17 @@ header {
 }
 
 
+/* chat section */
+.chat-section{
+    grid-area: chat-section;
+    display: grid;
+    place-items: end;
+}
+.chat-section iframe{
+    width: 350px;
+    height: 100%;
+}
+
 /* footer section */
 
 footer {
