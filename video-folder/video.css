@@ -136,6 +136,16 @@ header {
     font-size: 2rem;
 }
 
+/* main section */
+
+.main-section{
+    grid-area: main-section;
+}
+.live-video-section{
+    padding: 5px;
+}
+
+
 /* footer section */
 
 footer {

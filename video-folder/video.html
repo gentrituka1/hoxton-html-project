@@ -58,6 +58,29 @@
                 <li><img src="/video-folder/images-of-streamers/paladins.png"></li>
             </ul>
         </aside>
+        
+        <main class="main-section">
+            <div class="live-video-section">
+            <div id="twitch-embed"></div>
+            <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+            <script type="text/javascript">
+                new Twitch.Player("twitch-embed", {
+                    channel: "esl_csgo",
+                    width: 650,
+                    height: 420,
+                });
+            </script>
+            </div>
+        </main>
+
+        <aside class="chat-section">
+            <iframe
+                id="chat_embed"
+                src="https://www.twitch.tv/embed/esl_csgo/chat?parent=127.0.0.1:3000"
+                height="500"
+                width="350">
+            </iframe>
+        </aside>
 
       <footer>
         <div class="center-columns">
