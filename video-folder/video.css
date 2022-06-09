@@ -140,9 +140,74 @@ header {
 
 .main-section{
     grid-area: main-section;
-}
-.live-video-section{
     padding: 5px;
+}
+.bottom-part-section{
+    display: grid;
+    grid-template: 
+    "bottom-part-section-icon  bottom-part-section-title        bottom-part-section-subscribe" auto
+    "bottom-part-section-icon  bottom-part-section-description  bottom-part-section-viewers" auto
+    "bottom-part-section-icon  bottom-part-section-game         bottom-part-section-viewers" auto /
+    90px                       auto                             auto ;
+    padding: 10px;
+    grid-gap: 5px;
+}
+
+.bottom-part-section-icon{
+    grid-area: bottom-part-section-icon;
+}
+.bottom-part-section-icon img{
+    clip-path: circle();
+    border: 3px solid yellow;
+    border-radius: 50%;
+}
+.bottom-part-section-title{
+    grid-area: bottom-part-section-title;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.bottom-part-section-description{
+    grid-area: bottom-part-section-description;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.bottom-part-section-game{
+    grid-area: bottom-part-section-game;
+}
+.bottom-part-section-game a{
+    text-decoration: none;
+    color: purple
+}
+.bottom-part-section-subscribe{
+    grid-area: bottom-part-section-subscribe;
+    display: grid;
+    justify-items: end;
+}
+.btn-subscribe{
+    cursor: pointer;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    place-items: center;
+    background-color: #2d2424;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    border: 1px;
+}
+.subscribe-text{
+    font-size: 15.5px;
+    font-family:'Arial Narrow', Arial, sans-serif;
+}
+.viewers-count{
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    color: red;
+}
+.bottom-part-section-viewers{
+    grid-area: bottom-part-section-viewers;
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
 }
 
 
