@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -206,7 +207,7 @@ header ul li {
 .featured-games-main-bottom ul {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fill, 290px);
+  grid-template-columns: repeat(auto-fill, 400px);
 }
 .featured-games-main-bottom li {
   list-style: none;
