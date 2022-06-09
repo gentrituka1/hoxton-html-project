@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+        height: 100vh;
+        display: grid;
+        grid-template:
+          "header       header          header" 70px
+          "left-menu    main-section    chat-section" auto
+          "footer       footer          footer" auto/
+          55px          auto            auto;
+
+        position: relative;
+      
+}
+
+/* header section */
+
+header {
+    grid-area: header;
+    width: 100%;
+    background-color: #171717;
+    position: sticky;
+    top: 0;
+  }
+  header h1 {
+    font-family: "Courier New", Courier, monospace;
+    background: -webkit-linear-gradient(left, yellow, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+  }
+  .h1-list {
+    text-decoration: none;
+    transition: all 0.1s ease-in;
+  }
+  .h1-list:hover {
+    transform: scale(0.9);
+  }
+  .header-lists {
+    text-decoration: none;
+    display: grid;
+    align-items: center;
+  }
+  .header-lists:hover {
+    animation: flip 1s linear;
+  }
+  @keyframes flip {
+    0% {
+      transform: scale(5);
+    }
+    25% {
+      transform: scale(0.2);
+    }
+    50% {
+      transform: scale(2);
+    }
+    75% {
+      transform: scale(0.6);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  header ul {
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    padding: 10px 30px;
+  }
+  header ul li {
+    background: -webkit-linear-gradient(left, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.3rem;
+  }
+  .header-search-bar {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 40px auto;
+  }
+  .header-search-bar button {
+    background-color: white;
+    border-right: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .header-search-bar input {
+    padding: 10px;
+    width: 100%;
+    border-left: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-color: black;
+    outline: none;
+  }
+  .header-login-button {
+    text-align: end;
+  }
+  .header-login-button button {
+    width: 150px;
+    height: 100%;
+    border-radius: 30px;
+    font-size: 17px;
+    font-family: Verdana;
+    transition: all 0.5s ease-in-out;
+  }
+  .header-login-button button:hover {
+    background: -webkit-linear-gradient(left, rgb(3, 104, 129), red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(0.9);
+  }
+  
+/* left-menu section */
+
+.left-menu{
+    grid-area: left-menu;
+    background-color: #efeff1;
+    padding: 10px;
+}
+.left-menu ul{
+    display: grid;
+    gap: 15px;
+}
+.left-menu ul li{
+    list-style: none;
+}
+.left-menu ul li img{
+    width: 35px;
+    clip-path: circle();
+}
+.left-menu .material-symbols-outlined{
+    font-size: 2rem;
+}
+
+/* footer section */
+
+footer {
+    grid-area: footer;
+    background-color: #9b9b9b;
+    color: white;
+  
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .all-columns h5 {
+    font-size: 22px;
+  }
+  .center-columns {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 100px;
+  }
+  .all-columns li {
+    list-style: none;
+  }
+  .lists {
+    padding-top: 30px;
+    display: grid;
+    gap: 15px;
+  }
+  .fourth-column {
+    display: grid;
+    transform: translateY(50px);
+  }
+  
