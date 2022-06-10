@@ -10,9 +10,9 @@ body {
   display: grid;
   grid-template:
     "header" 70px
-    "section-1" auto
-    "featured-games" auto
-    "live-channels" auto
+    "section-1" 1fr
+    "featured-games" 1fr
+    "live-channels" 1fr
     "footer" auto /
     1fr;
   position: relative;
@@ -306,7 +306,7 @@ footer {
   display: grid;
   transform: translateY(50px);
 }
-@media (max-width: 900px){
+@media (max-width: 1000px){
   .header-lists{
     display: none;
   }
