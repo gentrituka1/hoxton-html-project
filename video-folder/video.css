@@ -256,4 +256,12 @@ footer {
     display: grid;
     transform: translateY(50px);
   }
-  
+@media (max-width: 600px){
+  body{
+    grid-template:
+           "header          header" 70px
+           "main-section    chat-section" auto
+           "footer          footer" auto /
+          55px          auto            auto;
+  }
+}
