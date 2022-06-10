@@ -273,7 +273,7 @@ footer {
     display: grid;
     transform: translateY(50px);
   }
-@media (max-width: 800px){
+@media (max-width: 1000px){
   body{
     grid-template:
            "header          header" 70px
@@ -285,7 +285,7 @@ footer {
     display: none;
   }
 }
-@media (max-width: 650px){
+@media (max-width: 900px){
   body{
     grid-template:
            "header      " 70px
