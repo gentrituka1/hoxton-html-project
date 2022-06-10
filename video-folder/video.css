@@ -8,9 +8,9 @@ body{
         display: grid;
         grid-template:
           "header       header          header" 70px
-          "left-menu    main-section    chat-section" auto
+          "left-menu    main-section    chat-section" 1fr
           "footer       footer          footer" auto/
-          55px          auto            auto;
+          55px          1fr           auto;
 
         position: relative;
       
@@ -121,6 +121,9 @@ header {
     background-color: #efeff1;
     padding: 10px;
 }
+.left-menu li:hover{
+    background-color: #cfcfcf63;
+}
 .left-menu ul{
     display: grid;
     gap: 15px;
@@ -141,6 +144,8 @@ header {
 .main-section{
     grid-area: main-section;
     padding: 5px;
+    display: grid;
+    grid-template-rows: 1fr;
 }
 .bottom-part-section{
     display: grid;
@@ -151,6 +156,10 @@ header {
     90px                       auto                             auto ;
     padding: 10px;
     grid-gap: 5px;
+}
+#twitch-embed iframe{
+  width: 100%;
+  height: 100%;
 }
 
 .bottom-part-section-icon{
@@ -205,8 +214,9 @@ header {
 }
 .bottom-part-section-viewers{
     grid-area: bottom-part-section-viewers;
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
     place-items: center;
 }
 
