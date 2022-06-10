@@ -177,6 +177,7 @@ header ul li {
 
 .featured-games {
   grid-area: featured-games;
+  background: -webkit-linear-gradient( #ffff00b9, rgba(255, 166, 0, 0.267));
 }
 .featured-games-main {
   display: grid;
@@ -243,6 +244,7 @@ header ul li {
   display: grid;
   gap: 20px;
   width: 100%;
+  background: -webkit-linear-gradient(#0368818f, #ff00006c);
 }
 
 .live-channels li{
